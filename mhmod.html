@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class='parent'>
+        <div class='child'>
+            <div class="all">
+                <center>
+                    <img id="my-image" class="scroll-animation" src="web.jpg" alt="my image">
+                </center>
+                
+                <img src="lab.png" alt="" class="wolfTeam">
+            </div>
+        </div>
+        <div class='child'>
+            <div class="all">
+                <center>
+                    <img id="my-image" class="scroll-animation" src="web.jpg" alt="my image">
+                </center>
+                
+                <img src="lab.png" alt="" class="wolfTeam">
+            </div>
+        </div>
+      </div>
+      <style>
+        .parent {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.wolfTeam {
+                width: 100%;
+            }
+            .all {
+                border: 1px solid black;
+                width: 800px;
+                height: 500px;
+                margin: auto;
+                position: relative;
+                overflow: hidden;
+            }
+            #my-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 3000px;
+            object-fit: cover;
+            animation: scroll-animation 20s ease-in-out infinite;
+            }
+    
+            @keyframes scroll-animation {
+                0% {
+        transform: translateY(0%);
+      }
+      50% {
+        transform: translateY(-83%);
+      }
+    
+    }
+      </style>
+</body>
+</html>
